@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 *.html linguist-detectable=false
+
+git add .gitattributes
+git commit -m "Fix language detection"
+git push

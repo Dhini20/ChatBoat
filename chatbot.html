@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evergreen AI</title>
+  <link rel="stylesheet" href="CHATBOT.css">
+</head>
+<body>
+  <header class="logo-header">
+    <img src="C:\Users\Madhusha Prasadhini\Downloads\Blue and Yellow Minimalist Modern University Logo.png" alt="Evergreen Logo" class="logo">
+  </header>
+
+  <div class="robot-container">
+    <img src="https://cdn.zmescience.com/wp-content/uploads/2015/06/robot.jpg" alt="Robot" class="robot-image" />
+    <div class="text-overlay">
+      <h3>Evergreen International University</h3>
+      <p>Empowering students globally through personalized AI-guided counseling and academic success tools.</p>
+    </div>
+  </div>
+
+  <input type="file" id="json-upload" accept=".json" style="display: none;" />
+
+  <div class="chat-container" id="chat-container">
+    <div class="toggle-wrapper">
+      <div class="toggle" onclick="toggleTheme()"></div>
+    </div>
+    <div class="header">Evergreen AI</div>
+    <div class="chat-body" id="chat-body">
+      <div class="message bot-message">
+        <img src="https://www.shutterstock.com/image-vector/happy-robot-3d-ai-character-600nw-2464455965.jpg" class="profile-pic">
+        <div class="text-bubble">Hi! Please upload the Evergreen JSON file to start chatting.</div>
+      </div>
+    </div>
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Type your message...">
+      <button onclick="sendMessage()">➤</button>
+      <button onclick="startVoiceInput()">🎙️</button>
+    </div>
+  </div>
+
+  <script src="CHATBOT.js"></script>
+  <script src="Chatbot.json"></script>
+</body>
+</html>
